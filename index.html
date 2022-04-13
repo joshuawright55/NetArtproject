@@ -1,0 +1,40 @@
+<html>
+
+
+
+<body>
+
+	<p id="display text" onmouseover="hidePicture()" onmouseout="changeBack()">
+	<button id = "b1" onclick="hidegif()"> HIDE</button>
+	<button id = "b2" onclick="showgif()"> SHOW</button>
+
+
+	<h1 style="color: blue"> bla bla bla</h1>
+	<br/>
+	<br/>
+
+	<img id = "msu" src="msu.png" onmouseover="hidePicture()" onmouseout="changeBack()">
+	<img id = "trip" src="trip.gif"/>
+
+	<script>
+		function hidePicture(){
+			document.getElementById("msu").style.visibility = "hidden";
+		}
+
+		function showPicture(){
+			document.getElementById("msu").style.visibility = "visible";
+		}
+
+		function hidegif(){
+			document.getElementById("trip").style.visibility = "hidden";
+		}
+
+		function showgif(){
+			document.getElementById("trip").style.visibility = "visible";
+		}
+	</script>
+
+</body>
+
+
+</html>
